@@ -13,12 +13,13 @@
 <body>
     <!-- Header Section -->
     <header>
-        <h1><a href="index.php" style="color: black; text-decoration: none;">Welcome to Farm.info</a></h1>
         <nav>
             <ul>
-                <li><a href="marketplace.php">Marketplace</a></li>
+                <!-- TODO assign .active class to the link of current page -->
+                <li><a href="index.php" style="float: left">Farm.info</a></li>
+                <li><a href="cart.php">Cart</a></li>
                 <li><a href="wiki.php">Wiki</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="about.php">About</a></li>
             </ul>
         </nav>
     </header>

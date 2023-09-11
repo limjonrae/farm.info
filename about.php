@@ -1,4 +1,4 @@
-<?php $title = 'Contact';
+<?php $title = 'About';
 include("template/top.php"); ?>
 
 

@@ -1,4 +1,13 @@
+/* remove browser default margin */
+body {
+    margin: 0;
+}
+
 /* navigation bar */
+header {
+    position: sticky;
+}
+
 nav>ul {
     list-style-type: none;
     margin: 0;
@@ -26,4 +35,83 @@ nav>ul>li a:hover {
 
 .active {
     background-color: #04AA6D;
+}
+
+/* main content */
+main {
+    background-color: #f0f0f0;
+    padding: 20px;
+    max-width: 70em;
+    margin: auto;
+}
+
+/* marketplace */
+.price {
+    font-size: medium;
+    font-weight: bold;
+}
+
+.two-column-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.two-column-layout>* {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .two-column-layout>* {
+        width: 46%;
+        margin: 2%;
+    }
+}
+
+/* image viewer */
+.image-row {
+    /* TODO fix the weird vertical overflow */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    display: block;
+    height: 4em;
+}
+
+.image-row>img {
+    margin: 0px 5px;
+
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all .1s;
+
+    /* thank you for wasting half an hour of my precious time, Firefox */
+    height: 100%;
+}
+
+.image-row>img:hover {
+    opacity: 1;
+}
+
+.image-row>img:active {
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+.image-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.image-container {
+    position: relative;
+}
+
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
 }

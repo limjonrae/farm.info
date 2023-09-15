@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cart | Farm.info
+    </title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li style="float: left"><a href="index.php">Farm.info</a></li>
+                <li><a href="about.php">About</a></li>
+                <li><a href="wiki.php">Wiki</a></li>
+                <li class="active"><a href="cart.php">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Cart</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><input type="checkbox" name="select-all" id="select-all"></th>
+                    <th colspan="2">Product info</th>
+                    <th>Price</th>
+                    <th>Seller</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><input type="checkbox" name="select item" id="select_item_1"></td>
+                    <td><img src="images/img_nature.jpg" alt="Nature"></td>
+                    <td>Product name</td>
+                    <td>RM49.90</td>
+                    <td>Seller name</td>
+                    <td>2</td>
+                    <td>RM99.80</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="select item" id="select_item_1"></td>
+                    <td><img src="images/img_nature.jpg" alt="Nature"></td>
+                    <td>Product name</td>
+                    <td>RM49.90</td>
+                    <td>Seller name</td>
+                    <td>2</td>
+                    <td>RM99.80</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="select item" id="select_item_1"></td>
+                    <td><img src="images/img_nature.jpg" alt="Nature"></td>
+                    <td>Product name</td>
+                    <td>RM49.90</td>
+                    <td>Seller name</td>
+                    <td>2</td>
+                    <td>RM99.80</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="checkout">
+            <span>Total from 2 item(s): RM99.80</span>
+            <button>Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact us at: contact@farm.info</p>
+    </footer>
+</body>
+
+</html>

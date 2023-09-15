@@ -116,12 +116,37 @@ main {
     font-size: 20px;
 }
 
+/* cart */
+.checkout {
+    margin-left: auto;
+    margin-right: 0;
+    width: fit-content;
+}
+
+table {
+    table-layout: auto;
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    vertical-align: middle;
+
+    border-bottom: 1px solid #B9B9B9;
+}
+
+td>img {
+    max-height: 100px;
+}
+
 /* jiggle if anyone wants */
 .jiggle:hover {
     position: relative;
     animation: jiggle 1s ease-in-out infinite;
 }
-
 
 @keyframes jiggle {
     0% {
